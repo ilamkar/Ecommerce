@@ -47,7 +47,6 @@ body{
 }
 .menubar{
 	width: 100%;
-	width: 50px;
 	background-color: gray;
 	color: white;
 }
@@ -56,9 +55,38 @@ body{
 	margin: 0;
 	line-height: 35px;
 }
+#menu li{
+	list-style-type: none;
+	display:inline-block;
+}
+#menu a{
+text-decoration: none;
+color: white;
+padding: 8px;
+margin: 5px;
+font-size: 16px;
+font-family: cursive;
+
+}
+#menu a:hover{
+	color: orange;
+	font-weight: bolder;
+	text-decoration: underline;
+}
 .content_wrapper{
 	width: 100%;
 	height: 800px;
 	margin: auto;
 	background-color: pink;
+}
+.sidebar{
+	width: 20%;
+	height: 800px;
+	background-color: black;
+	color: white;
+	float: left;
+}
+.content_area{
+	width: 80%;
+	height:800px;
 }
