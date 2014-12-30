@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php 
+	include ('functions/functions.php');
+?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -28,14 +31,29 @@
 			<li><a href="#">Contact Us</a></li>
 
 		</ul>
+		<div id="form">
+			<form method="get" action="result.php" enctype="multipart/form-data">
+				<input type="text" name="user_query" placeholder="Search products"/>
+				<input type="submit" name="search" value="Search">
+
+			</form>
+		</div>
 	</div>
 
 	<!--Content wrapper starts-->
+	
 	<div class="content_wrapper">
 		<div class="sidebar"> 
-			side bar
-
-		</div>
+			<div id="sidebar_title">Categories</div>
+				<ul id="cats">
+				<?php getCategories();?>
+				</ul>
+				
+				<div id="sidebar_title">Brands</div>
+				<ul id="cats">
+					<?php getBrands();?>
+				</ul>
+			</div>
 	
 		<div class="content_area"> 
 			content area
@@ -44,7 +62,7 @@
 
 	
 	<div class="footer"> 
-		footer
+		<h2 style="text-align:center; padding:10px;">&copy by ilam</h2>
 	</div>
 
 </div> <!--main wrapper ends -->
