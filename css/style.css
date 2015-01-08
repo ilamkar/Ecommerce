@@ -28,6 +28,8 @@ body{
 .main_wrapper{
 	width: 1000px;
 	margin: auto;
+	height: auto;
+	background-color: black;
 }
 .header_wrapper{
 	width: 1000px;
@@ -81,12 +83,14 @@ font-family: cursive;
 }
 .content_wrapper{
 	width: 1000px;
-	margin: auto;
+	height: auto;
+	margin:auto;
 	background-color: pink;
+	clear: both;
 }
 .sidebar{
 	width: 250px;
-	height: 800px;
+	height: auto;
 	background-color: black;
 	color: white;
 	float: left;
@@ -120,10 +124,31 @@ font-family: cursive;
 	text-decoration: underline;
 }
 .content_area{
+	background: pink;
+	float: left;
 	width: 750px;
 	height: auto;
+}
+#products_box{
+	width: 750px;
+	text-align: center;
+}
+#single_product{
+	float: left;
+	margin-left: 30px;
+	padding: 10px;
+}
+#single_product img{
+	border: 2px solid black;
+}
+#shopping_cart{
+	width: 750px;
+	height: 50px;
+	background-color: black;
+	color: white;
 }
 .footer{
 	clear: both;
 	background-color: gray;
 }
+
