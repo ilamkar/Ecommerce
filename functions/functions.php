@@ -31,7 +31,7 @@
 
 	function getProducts(){
 		global $connect;
-		$get_products ="SELECT * FROM products ORDER BY RAND() LIMIT 0,6";
+		$get_products ="SELECT * FROM products ORDER BY RAND() LIMIT 0,20";
 
 		$run_products = mysqli_query($connect,$get_products);
 
